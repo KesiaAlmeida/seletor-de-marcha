@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Selector de Marcha</title>
+</head>
+<body>
+    <div class="gear-selector">
+        <label for="gear">Selecione a marcha</label>
+        <input type="text" id="gear" readonly>
+        <div class="buttons">
+            <button onclick="selectGear('P')">P</button>
+            <button onclick="selectGear('R')">R</button>
+            <button onclick="selectGear('N')">N</button>
+            <button onclick="selectGear('D')">D</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
