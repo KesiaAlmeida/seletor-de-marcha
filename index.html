@@ -9,14 +9,23 @@
 <body>
     <div class="gear-selector">
         <label for="gear"></label>
-        <input type="text" id="gear" readonly>
         <div class="buttons">
-            <button onclick="selectGear('P')">P</button>
-            <button onclick="selectGear('R')">R</button>
-            <button onclick="selectGear('N')">N</button>
-            <button onclick="selectGear('D')">D</button>
+            <div>
+                <button class="button" onclick="selectGear('P')">P</button>
+            </div>
+            <div>
+                <button class="button" onclick="selectGear('R')">R</button>
+            </div>
+            <div>
+                <button class="button" onclick="selectGear('N')">N</button>
+
+            </div>
+            <div>
+                <button class="button" onclick="selectGear('D')">D</button>
+            </div>
         </div>
     </div>
     <script src="script.js"></script>
 </body>
 </html>
+

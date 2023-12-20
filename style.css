@@ -23,7 +23,3 @@ body {
     margin: 0 5px;
     cursor: pointer;
 }
-
-.gear.selected {
-    background-color: #e74c3c;
-}
