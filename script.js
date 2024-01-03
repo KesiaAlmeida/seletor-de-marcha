@@ -1,20 +1,17 @@
-// function selectGear(gear) {
-//     document.getElementById('gear').value = gear;
-// }
 function selectGear(gear) {
   resetButtonColors();
 
-  // Selecione o botão atual e defina a cor para verde
-  let currentButton = document.querySelector(".button" + gear);
-  currentButton.style.backgroundColor = "green";
+  // Selecione o botão atual e adicione a classe 'active'
+  let currentButton = document.querySelector(".button:contains('" + gear + "')");
+  currentButton.classList.add("active");
 
   // Seu código existente aqui
 }
 
 function resetButtonColors() {
-  // Reinicie a cor de todos os botões para a cor padrão
+  // Remova a classe 'active' de todos os botões
   var buttons = document.querySelectorAll(".button");
   buttons.forEach(function(button) {
-    button.style.backgroundColor = ""; // Define a cor para a padrão (transparente)
+      button.classList.remove("active");
   });
 }
